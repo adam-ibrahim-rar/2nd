@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        #paragraph,
+        .cont {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        #list {
+            overflow: hidden;
+            border: none;
+            background-color: #eee;
+            padding: 5px;
+        }
+
+        input {
+            margin: 5px 0;
+        }
+
+        .spanInput {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="paragraph" class="cont">
+        Write a TypeScript program that changes the text color to plum and adds a
+        magenta dashed border around <em> emphasized</em> words in a paragraph
+        when the mouse moves over the <em>paragraph</em>. The paragraph should
+        return to its original formatting when the mouse moves out of the
+        <em>paragraph</em>. The provided figures illustrate the functionality of
+        the program.
+    </p>
+    <form class="cont">
+        <span>
+            File Types:
+            <input type="checkbox" name="html" id="html" />
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css" />
+            <label for="css">CSS</label>
+            <input type="checkbox" name="javaScript" id="javaScript" />
+            <label for="javaScript">JAVASCRIPT</label>
+            <input type="checkbox" name="php" id="php" />
+            <label for="php">PHP</label>
+        </span>
+        <br />
+        <br />
+        <span style="display: flex; gap: 5px">
+            File List:
+            <select name="list" id="list" size="5">
+                <span>file list</span>
+                <option class="option" value="html">frist:html</option>
+                <option class="option" value="css">second:css</option>
+                <option class="option" value="javaScript">third:javascript</option>
+                <option class="option" value="php">fourth:php</option>
+            </select>
+        </span>
+    </form>
+
+    <div class="cont">
+
+        <h1>student sorting</h1>
+        <span class="spanInput">
+            <label for="name">name :</label>
+            <input type="text" name="name" id="name" />
+        </span>
+        <span class="spanInput">
+            <label for="age">age :</label>
+            <input type="text" name="age" id="age" />
+        </span>
+        <span class="spanInput">
+            <label for="gpa">gpa :</label>
+            <input type="text" name="gpa" id="gpa" />
+        </span>
+        <button id="add" type="button">add student</button>
+        <span style="display: flex; gap: 5px;margin: 5px ;">
+            Sort by:
+            <select id="li">
+                <option>select a propertiy</option>
+                <option value="gpa" id="bygpa">gpa desending</option>
+                <option value="name" id="byname">name ascending</option>
+
+            </select>
+        </span>
+        <p>
+
+        </p>
+        <table border="1px" style="width: 300px;">
+            <tr>
+                <th>
+                    name
+                </th>
+                <th>
+                    gpa </th>
+                <th>
+                    age
+                </th>
+            </tr>
+            <table id="display" border="1px" style="width: 300px;">
+                
+            </table>
+
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

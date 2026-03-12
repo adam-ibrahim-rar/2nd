@@ -53,8 +53,8 @@ int main()
         products[i].read();
     for (int i = 0; i < 2; i++)
         products[i].display();
-    for (int i = 0; i < 2; i++)
-        products[i].display_count();
+        product::display_count();
 
     return EXIT_SUCCESS;
+
 }

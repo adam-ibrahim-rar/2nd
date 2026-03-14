@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        position: relative;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin: 0 auto;
+        background-color: darkgray;
+        padding: 25px;
+        gap: 5px;
+        
+        font-weight: 400;
+      }
+      h1 {
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 500;
+        color: darkslateblue;
+      }
+      label {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+      }
+      input:not([type="checkbox"]) {
+        width: 50%;
+        padding: 5px;
+        font-size: 16px;
+      }
+      select {
+        width: 53%;
+        padding: 5px;
+        font-size: 16px;
+      }
+      #submit {
+        background-color: darkslateblue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 18px;
+        width: 100px;
+        text-align: center;
+      }
+      p{
+        background-color: white;
+        font-weight: 500;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <caption>
+        <h1>REGISTRATION FORM</h1>
+      </caption>
+      <label for="name" class="lable">user name</label>
+      <input type="text" name="name" id="name" placeholder="user name" />
+      <label for="password" class="lable">password</label>
+      <input type="password" name="password" id="password" placeholder="password" />
+      <label for="semester-year" class="lable">Semester Year</label>
+      <select name="semester-year" id="semester-year">
+        <option value="select your semester year">
+          select your semester year
+        </option>
+        <option value="1">1st</option>
+        <option value="2">2nd</option>
+        <option value="3">3rd</option>
+        <option value="4">4th</option>
+      </select>
+      <span>
+        <span style="font-size: 20px"> Course Taken: </span>
+        <input type="checkbox" name="comp 102" id="comp102" class="courses" />
+        <label for="comp102">COMP 102</label>
+        <input type="checkbox" name="comp 206" id="comp206"  class="courses"/>
+        <label for="comp206">COMP 206</label>
+        <input type="checkbox" name="math 101" id="math101"  class="courses"/>
+        <label for="math101">MATH 101</label>
+      </span>
+      <span>
+        <input type="checkbox" name="newsletter" id="newsletter" />
+        <label for="newsletter">Sign up for newsletter</label>
+      </span>
+      <input  value="register" id="submit"/>
+      <p id="textarea"></p>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>

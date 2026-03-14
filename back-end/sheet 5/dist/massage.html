@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="massage">Thanks for your registration</h1>
+    <script>
+      let massage = document.getElementById("massage");
+      let isRed=true
+      setInterval(()=>{
+            if(isRed){
+                massage.style.color = "black"
+                massage.style.fontSize = "2em"
+
+            }
+            else{
+                massage.style.color = "red"
+                massage.style.fontSize = "3em"
+            }
+            isRed=!isRed
+      }, 400);
+    </script>
+  </body>
+</html>
